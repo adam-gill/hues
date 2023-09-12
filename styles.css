@@ -54,5 +54,26 @@ nav {
 
 .title-main {
     font-size: 64px;
-    max-width: 400px;
+}
+
+.real__img {
+    width: 50%;
+}
+
+.main__img-holder {
+    width: 100%;
+}
+
+.text__section-landing {
+    width: 100%;
+}
+
+.main-section {
+    padding-top: 48px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
 }
