@@ -1,128 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'JetBrains Mono', monospace;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "JetBrains Mono", monospace;
+}
+
+html {
+    max-width: 100vw;
+}
+
+.page__container {
+    padding: 0 20px;
 }
 
 /* NAV */
 
 nav {
-    width: 100%;
-    max-width: 1280px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .nav-wrapper {
-    width: 100%;
-    background-color: #9e9e9e;
+  width: 100%;
+  background-color: #9e9e9e;
 }
 
 .logo-top {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .links {
-    display: flex;
+  display: flex;
 }
 
 .link {
-    display: flex;
-    margin-right: 12px;
-    padding: 2px 8px;
-    text-decoration: none;
-    background-color: black;
-    color: white;
-    border: 2px solid black;
-    border-radius: 999px;
-    text-align: center;
-    transition: all 300ms ease;
+  display: flex;
+  margin-right: 12px;
+  padding: 2px 8px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 999px;
+  text-align: center;
+  transition: all 300ms ease;
 }
 
 .link:active {
-    transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 .link:hover {
-    transform: scale(1.1);
-    background-color: white;
-    color: black;
-    transform: translateY(-4px);
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
+  transform: translateY(-4px);
 }
-
-
 
 /* LANDING */
 
-
-
 .title-main {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 .horizontal-line {
-    margin: 18px 0;
-    background-color: black;
-    height: 2px;
-    width: 80%;
+  margin: 18px 0;
+  background-color: black;
+  height: 2px;
+  width: 80%;
 }
 
 .para-main {
-    font-size: 24px;
-    padding-bottom: 24px;
-    text-align: center;
+  font-size: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+  width: 100%;
 }
 
 .real__img {
-    width: 50%;
+  width: 50%;
 }
 
 .main__img-holder {
-    width: 100%;
+  width: 100%;
 }
 
 .text__section-landing {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    vertical-align: top;
-    margin-right: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  vertical-align: top;
+  margin-right: 32px;
 }
 
 .main-section {
-    padding-top: 48px;
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin: 0 auto;
+  padding-top: 48px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0 auto;
 }
 
 .estimate-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    width: 50%;
-    padding: 18px 0;
-    border: 2px solid black;
-    background-color: black;   
-    color: white; 
-    border-radius: 999px;
-    transition: all 300ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  width: 50%;
+  padding: 18px 0;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 999px;
+  transition: all 300ms ease;
 }
 
 .estimate-btn:hover {
-    background-color: white;
-    color: black;
-    transform: translateY(-4px);
+  background-color: white;
+  color: black;
+  transform: translateY(-4px);
 }
 
+@media (max-width: 480px) {
+
+  .main-section {
+    flex-direction: column-reverse;
+    justify-content: center;    
+    align-items: center;
+  }
+
+  .real__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  }
+
+  .title-main {
+    margin-top: 16px;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .text__section-landing {
+    margin: 0;
+    padding-bottom: 48px;
+  }
+}
