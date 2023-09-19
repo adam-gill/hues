@@ -341,6 +341,31 @@ nav {
   font-size: 24px;
 }
 
+footer {
+  background-color: black;
+  max-height: 90vh;
+}
+
+.footer__logo {
+  width: 100px;
+  height: 100px;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.footer__title {
+  color: white;
+}
+
+.logo__container--footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
