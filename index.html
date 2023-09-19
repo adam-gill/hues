@@ -3,30 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./assets/Holiday Hues-logos_black.png" type="png" />
-    <link rel="stylesheet" href="mycss.css" />
-
+    <link rel="icon" href="./assets/Holiday Hues-logos_white.png" type="png" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script> -->
     <title>Holiday Hues</title>
   </head>
   <body>
     <div class="nav-wrapper">
       <nav>
-        <figure>
-          <a href="#"
-            ><img
-              src="./assets/Holiday Hues-logos_black.png "
-              class="logo-top"
-              alt=""
-          /></a>
-        </figure>
+        <div class="logo__section">
+          <figure>
+            <a href="#"
+              ><img
+                src="./assets/Holiday Hues-logos_black.png "
+                class="logo-top"
+                alt=""
+            /></a>
+          </figure>
+          <a href="#" class="company">Holiday Hues</a>
+        </div>
+
         <div class="links">
-          <a href="#" class="link">Estimates</a>
-          <a href="#" class="link">Contact</a>
-          <a href="#" class="link">About Us</a>
+          <a href="#estimates" class="link">Estimates</a>
+          <a href="#about__us" class="link">About Us</a>
         </div>
       </nav>
     </div>
     <div class="page__container">
+      <section id="contact__us">
+        <div class="container container__mod1">
+          <div class="row">
+            <div class="button__container main__buttons">
+              <a
+                class="contact-btn"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc3eal6mvJOTPSJp7KvO6PdLxYbMfe8XkfT4gPVHxfZUfJXrw/viewform?usp=sf_link"
+                target="_blank"
+                >Get Your Free Estimate Now!</a
+              >
+
+              <a class="contact-btn" href="tel:+17244137259" target="_blank"
+                >Call Us Now: 724-413-7259
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="landing">
         <div class="main-section">
           <div class="text__section-landing">
@@ -38,13 +63,142 @@
               Make your home the best on the block this winter with Holiday
               Hues!
             </p>
-
-            <button class="estimate-btn">Get Estimate</button>
           </div>
 
           <img src="./assets/IMG_8938.jpeg" class="real__img" alt="" />
         </div>
       </section>
+
+      <section id="estimates">
+        <div class="container">
+          <div class="row">
+            <div class="form__container">
+              <h1 class="estimates__title">Get your Free Estimate Now!</h1>
+              <p class="estimates__instructions">
+                Simply fill out the Google Form below, and we'll give you an
+                estimate in less than 24 hours!
+              </p>
+              <a
+                class="estimate-btn big-btn"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSc3eal6mvJOTPSJp7KvO6PdLxYbMfe8XkfT4gPVHxfZUfJXrw/viewform?usp=sf_link"
+                target="_blank"
+                >Get Free Estimate Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about__us">
+        <div class="container">
+          <div class="row">
+            <div class="about__us--text-container">
+              <h1 class="about__us-title">About Us</h1>
+              <p class="about__us--para">
+                Danny and I are both studying Computer Science at University. In
+                fact, we built this website from the ground up all by ourselves!
+                We also both share a strong entrepreneural spirit, dreaming of
+                owning our own tech business one day in the future. We love
+                providing for our community and look forward to making your
+                house stand out this winter!
+              </p>
+              <div class="dannyandi__container">
+                <div class="individual">
+                  <figure class="img__container">
+                    <img
+                      class="individual__img"
+                      src="https://adam-gill.github.io/learning_webdev/portfolio_website/assets/adamgill.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <h3 class="individual__heading">Adam</h3>
+                  <div class="horizontal-line line__bio"></div>
+                  <p class="individual__bio">
+                    Hello, I'm Adam. I'm currently a sophomore at Waynesburg
+                    University, studying Computer Science and Mathematics. I
+                    plan to graduate in the spring of 2025. I love building
+                    things myself and have a strong passion for
+                    entrepreneurialism. I love to lift weights and be around
+                    friends and familiy. I look foward to meeting all you
+                    wonderful people and providing you with the best service
+                    possible this winter.
+                  </p>
+                  <div class="horizontal-line line__bio"></div>
+                  <div class="number__container">
+                    <a href="tel:+17244137259" class="number"
+                      >724-413-7259
+
+                      <img
+                        class="small__svg"
+                        src="./assets/arrow-up-right-from-square-solid.svg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="number__container m-top">
+                    <a href="mailto:adam.douglas.gill@gmail.com" class="number"
+                      >adam.douglas.gill@gmail.com
+
+                      <img
+                        class="small__svg"
+                        src="./assets/arrow-up-right-from-square-solid.svg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="individual">
+                  <figure class="img__container">
+                    <img
+                      class="individual__img danny"
+                      src="./assets/danny.jpg"
+                      alt=""
+                    />
+                  </figure>
+                  <h3 class="individual__heading">Danny</h3>
+                  <div class="horizontal-line line__bio"></div>
+                  <p class="individual__bio">
+                    Hey, I'm Danny! I'm currently pursuing a Computer Science
+                    degree at Western Governors University. My journey into
+                    entrepreneurship started after high school when I got my
+                    real estate license. In just two years, I delved into real
+                    estate, closing my first deal at 18. However, my tech
+                    passion led me to pivot my career path. I've always had a
+                    deep interest in business, which began with selling couches
+                    as a kid. Today, I'm channeling my entrepreneurial spirit
+                    into Holiday Hues!
+                  </p>
+                  <div class="horizontal-line line__bio"></div>
+                  <div class="number__container">
+                    <a href="tel:+14127366409" class="number"
+                      >412-736-6409
+
+                      <img
+                        class="small__svg"
+                        src="./assets/arrow-up-right-from-square-solid.svg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="number__container m-top">
+                    <a href="mailto:danielbirdwork@gmail.com" class="number"
+                      >danielbirdwork@gmail.com
+
+                      <img
+                        class="small__svg"
+                        src="./assets/arrow-up-right-from-square-solid.svg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <footer></footer>
   </body>
 </html>
