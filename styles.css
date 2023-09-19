@@ -351,6 +351,14 @@ nav {
 
 @media (max-width: 480px) {
 
+  nav {
+    justify-content: space-around;
+  }
+
+  .company {
+    display: none;
+  }
+
   .main-section {
     flex-direction: column-reverse;
     justify-content: center;    
@@ -376,5 +384,53 @@ nav {
   .text__section-landing {
     margin: 0;
     padding-bottom: 48px;
+  }
+
+  .button__container {
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+
+  .m-bottom {
+    margin-top: 24px;
+  }
+
+  .estimates__title {
+    font-size: 48px;
+  }
+
+  .big-btn {
+    width: 100%;
+  }
+
+  .about__us-title {
+    font-size: 48px;
+  }
+
+  .about__us--para {
+    font-size: 18px;
+  }
+
+  .dannyandi__container {
+    flex-direction: column;
+  }
+
+  .individual {
+    margin-bottom: 48px;
+  }
+  
+}
+
+@media (max-width: 400px) {
+
+  .contact-btn {
+    padding: 24px 16px;
+  }
+
+  .big-btn {
+    font-size: 20px;
   }
 }
